@@ -1,8 +1,3 @@
-game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "RC🔔",
-        Text = "THX FOR USING RC!",
-        Duration = 5
-    })
 
 Player = game.Players.LocalPlayer.Character.Name
                     
