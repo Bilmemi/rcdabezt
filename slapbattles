@@ -62,7 +62,7 @@ local arenaVoid = Instance.new("Part", workspace)
                 
                 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
                 
-                local Window = OrionLib:MakeWindow({Name = "RC[SLAP BATTLES👋]", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+                local Window = OrionLib:MakeWindow({Name = "RC [SLAP BATTLES👋]", HidePremium = true, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
                 local Tab = Window:MakeTab({
                     Name = "Ability Spams",
@@ -1581,3 +1581,12 @@ game:GetService("ReplicatedStorage").HumanoidDied:FireServer(unpack(args))
 
     end
             end
+	    
+	    
+	    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "RC🔔",
+        Text = "THX FOR USING RC!",
+        Duration = 5
+    })
+    return
+end
